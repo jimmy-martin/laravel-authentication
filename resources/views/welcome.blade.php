@@ -432,8 +432,8 @@
 
         <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
             <div class="grid grid-cols-1 md:grid-cols-2">
-                @guest()
-                    <div>Vous n'êtes pas connecté !</div>
+                @auth()
+                    <div>Vous êtes connecté !</div>
                     <div class="p-6">
                         <div class="flex items-center">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -454,7 +454,7 @@
                             </div>
                         </div>
                     </div>
-                @endguest
+                @endauth
                 <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
                     <div class="flex items-center">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
